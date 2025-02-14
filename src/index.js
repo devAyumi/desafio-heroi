@@ -24,6 +24,17 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 */
 
-var nomeHeroi;
-var xp;
+var nome = prompt("Insira o nome do herói: ");
 
+var xp = prompt("Insira o nível de experiência do herói: ");
+
+function verificarNivel(xp) {
+    if (xp < 1000) {
+        nivel = "Ferro";
+    }
+    else if (xp > 1000 && xp < 2000) {
+        nivel = "Bronze";
+    }
+}
+
+console.log("O herói de nome " + nome + "está no nível " + nivel);
